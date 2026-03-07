@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b92bf815b067070f121f6962ecc9c5d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b92bf815b067070f121f6962ecc9c5d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b92bf815b067070f121f6962ecc9c5d0 = L.map(
+                "map_b92bf815b067070f121f6962ecc9c5d0",
+                {
+                    center: [26.0, 50.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb6497f7e215553a34ad478d14915bbd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb6497f7e215553a34ad478d14915bbd.addTo(map_b92bf815b067070f121f6962ecc9c5d0);
+        
+    
+            var marker_cluster_990a8df2b22859fcbee963bbc94ea0bc = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_689da0cfd0ccc3056e382b0c69463403 = L.circleMarker(
+                [25.0742823, 55.1885387],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_fc00dd9470fe92bdce0e56089f649b6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b613260dcf8a356d64671edc5281df8 = $(`<div id="html_9b613260dcf8a356d64671edc5281df8" style="width: 100.0%; height: 100.0%;">Smoke rises from a Dubai tower after attack<br>Dubai, UAE</div>`)[0];
+                popup_fc00dd9470fe92bdce0e56089f649b6a.setContent(html_9b613260dcf8a356d64671edc5281df8);
+            
+        
+
+        circle_marker_689da0cfd0ccc3056e382b0c69463403.bindPopup(popup_fc00dd9470fe92bdce0e56089f649b6a)
+        ;
+
+        
+    
+    
+            var circle_marker_d8bbde2eb3e85b06c680a2770de58fe2 = L.circleMarker(
+                [25.0742823, 55.1885387],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_b0e180b7af9fde48a2372640ee435ac4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_569d567a849b03d46e065354ccd4e608 = $(`<div id="html_569d567a849b03d46e065354ccd4e608" style="width: 100.0%; height: 100.0%;">British family stranded in Middle East after Foreign Office errors<br>Dubai, UAE</div>`)[0];
+                popup_b0e180b7af9fde48a2372640ee435ac4.setContent(html_569d567a849b03d46e065354ccd4e608);
+            
+        
+
+        circle_marker_d8bbde2eb3e85b06c680a2770de58fe2.bindPopup(popup_b0e180b7af9fde48a2372640ee435ac4)
+        ;
+
+        
+    
+    
+            var circle_marker_2eaaf0b6b556476b579fa7ab422412db = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_46c09453994e1bd8c89ac573380b8542 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f962d0456ed8f26223c1b74f40ed5ffa = $(`<div id="html_f962d0456ed8f26223c1b74f40ed5ffa" style="width: 100.0%; height: 100.0%;">'Don't die': the two words that sum up our lives in Tehran now | Anonymous<br>Tehran, Iran</div>`)[0];
+                popup_46c09453994e1bd8c89ac573380b8542.setContent(html_f962d0456ed8f26223c1b74f40ed5ffa);
+            
+        
+
+        circle_marker_2eaaf0b6b556476b579fa7ab422412db.bindPopup(popup_46c09453994e1bd8c89ac573380b8542)
+        ;
+
+        
+    
+    
+            var circle_marker_2277d0dd096a0280e10a9f5278c7cff2 = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_fc20d0b02fe85bad008fc5e1610f5098 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03c5d0f741bee00fadd7d3ad92b3c3bb = $(`<div id="html_03c5d0f741bee00fadd7d3ad92b3c3bb" style="width: 100.0%; height: 100.0%;">Tehran warns Europe to stay out of conflict or face ‘retaliation’ – as it happened<br>Tehran, Iran</div>`)[0];
+                popup_fc20d0b02fe85bad008fc5e1610f5098.setContent(html_03c5d0f741bee00fadd7d3ad92b3c3bb);
+            
+        
+
+        circle_marker_2277d0dd096a0280e10a9f5278c7cff2.bindPopup(popup_fc20d0b02fe85bad008fc5e1610f5098)
+        ;
+
+        
+    
+    
+            var circle_marker_cc6d45c1f45d775f023fd1c5268d7803 = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_91f993a95c8cdea1fdd26285477633f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80f6f17fe863d89c69965a5edc74c971 = $(`<div id="html_80f6f17fe863d89c69965a5edc74c971" style="width: 100.0%; height: 100.0%;">US considers lifting more sanctions on Russian oil as Iran conflict sees global prices surge<br>Tehran, Iran</div>`)[0];
+                popup_91f993a95c8cdea1fdd26285477633f2.setContent(html_80f6f17fe863d89c69965a5edc74c971);
+            
+        
+
+        circle_marker_cc6d45c1f45d775f023fd1c5268d7803.bindPopup(popup_91f993a95c8cdea1fdd26285477633f2)
+        ;
+
+        
+    
+    
+            var circle_marker_7c3df59a6a3213b5b7f744d022b32864 = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_dc99748318dc083f36ba522adbd104b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fce105b0a7fd4a7d975e190a3af2421 = $(`<div id="html_9fce105b0a7fd4a7d975e190a3af2421" style="width: 100.0%; height: 100.0%;">Trump demands Iran’s ‘unconditional surrender’ as bombs pound Tehran and Beirut<br>Tehran, Iran</div>`)[0];
+                popup_dc99748318dc083f36ba522adbd104b4.setContent(html_9fce105b0a7fd4a7d975e190a3af2421);
+            
+        
+
+        circle_marker_7c3df59a6a3213b5b7f744d022b32864.bindPopup(popup_dc99748318dc083f36ba522adbd104b4)
+        ;
+
+        
+    
+    
+            var circle_marker_ccd374635695e26359e6c20cfeb44225 = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_ed5f0b704fa1f804c631ca1d01d8c3c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ff2be8cc88562a895136a8d0c78a4b2 = $(`<div id="html_9ff2be8cc88562a895136a8d0c78a4b2" style="width: 100.0%; height: 100.0%;">Trump demands 'unconditional surrender' from Iran as Putin speaks with Iran's president<br>Tehran, Iran</div>`)[0];
+                popup_ed5f0b704fa1f804c631ca1d01d8c3c0.setContent(html_9ff2be8cc88562a895136a8d0c78a4b2);
+            
+        
+
+        circle_marker_ccd374635695e26359e6c20cfeb44225.bindPopup(popup_ed5f0b704fa1f804c631ca1d01d8c3c0)
+        ;
+
+        
+    
+    
+            var circle_marker_0b85657c0cf13964fd8e2e332668dd70 = L.circleMarker(
+                [33.8892265, 35.5025585],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_bc261b61319d7764c9a7a801f75d04bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db99b6536d829e112bc58915c702abb4 = $(`<div id="html_db99b6536d829e112bc58915c702abb4" style="width: 100.0%; height: 100.0%;">'We couldn't sleep because of fear': Residents flee as Israel pounds south Beirut<br>Beirut, Lebanon</div>`)[0];
+                popup_bc261b61319d7764c9a7a801f75d04bd.setContent(html_db99b6536d829e112bc58915c702abb4);
+            
+        
+
+        circle_marker_0b85657c0cf13964fd8e2e332668dd70.bindPopup(popup_bc261b61319d7764c9a7a801f75d04bd)
+        ;
+
+        
+    
+    
+            var circle_marker_c70b5b02b4177414a1703fab5a0bf945 = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_5374e2043f2e2858fc9a66dab8b6d7d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8387dca98f6bc7bbee0af0822393a2d6 = $(`<div id="html_8387dca98f6bc7bbee0af0822393a2d6" style="width: 100.0%; height: 100.0%;">Iran's high-risk war strategy seems to centre on endurance and deterrence<br>Tehran, Iran</div>`)[0];
+                popup_5374e2043f2e2858fc9a66dab8b6d7d4.setContent(html_8387dca98f6bc7bbee0af0822393a2d6);
+            
+        
+
+        circle_marker_c70b5b02b4177414a1703fab5a0bf945.bindPopup(popup_5374e2043f2e2858fc9a66dab8b6d7d4)
+        ;
+
+        
+    
+    
+            var circle_marker_f57de319d83bb19d5209b7689fc79eec = L.circleMarker(
+                [33.8892265, 35.5025585],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_697be6bc9fd4d41c499ee698515c5cf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b70ce6de4053bb9da53ad9d6a6f0080 = $(`<div id="html_0b70ce6de4053bb9da53ad9d6a6f0080" style="width: 100.0%; height: 100.0%;">Israel strikes Beirut after evacuation warning sparks panic<br>Beirut, Lebanon</div>`)[0];
+                popup_697be6bc9fd4d41c499ee698515c5cf6.setContent(html_0b70ce6de4053bb9da53ad9d6a6f0080);
+            
+        
+
+        circle_marker_f57de319d83bb19d5209b7689fc79eec.bindPopup(popup_697be6bc9fd4d41c499ee698515c5cf6)
+        ;
+
+        
+    
+    
+            var circle_marker_9b4bc4be08c328b3e3a8a4ee536cd624 = L.circleMarker(
+                [35.6892523, 51.3896004],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_990a8df2b22859fcbee963bbc94ea0bc);
+        
+    
+        var popup_dd857aa5a86e0dbf4c27c5ff9c2e4153 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0afd68cc74982ca515742bffa33b15aa = $(`<div id="html_0afd68cc74982ca515742bffa33b15aa" style="width: 100.0%; height: 100.0%;">Iran postpones Khamenei funeral as US-Israeli bombardment continues<br>Tehran, Iran</div>`)[0];
+                popup_dd857aa5a86e0dbf4c27c5ff9c2e4153.setContent(html_0afd68cc74982ca515742bffa33b15aa);
+            
+        
+
+        circle_marker_9b4bc4be08c328b3e3a8a4ee536cd624.bindPopup(popup_dd857aa5a86e0dbf4c27c5ff9c2e4153)
+        ;
+
+        
+    
+    
+            marker_cluster_990a8df2b22859fcbee963bbc94ea0bc.addTo(map_b92bf815b067070f121f6962ecc9c5d0);
+        
+    
+            var heat_map_fae0e4f3dc288a84e0d68d16f5d559e6 = L.heatLayer(
+                [[25.0742823, 55.1885387, 7], [25.0742823, 55.1885387, 7], [35.6892523, 51.3896004, 15], [35.6892523, 51.3896004, 7], [35.6892523, 51.3896004, 7], [35.6892523, 51.3896004, 11], [35.6892523, 51.3896004, 3], [33.8892265, 35.5025585, 3], [35.6892523, 51.3896004, 7], [33.8892265, 35.5025585, 7], [35.6892523, 51.3896004, 7]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_fae0e4f3dc288a84e0d68d16f5d559e6.addTo(map_b92bf815b067070f121f6962ecc9c5d0);
+        
+</script>
+</html>
