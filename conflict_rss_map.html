@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_955261085cd9a396775447a7edb0999a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_955261085cd9a396775447a7edb0999a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_955261085cd9a396775447a7edb0999a = L.map(
+                "map_955261085cd9a396775447a7edb0999a",
+                {
+                    center: [32.5, 53.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b995644c02e35ef8e7c1475c0045a9c5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b995644c02e35ef8e7c1475c0045a9c5.addTo(map_955261085cd9a396775447a7edb0999a);
+        
+    
+            var marker_cluster_8a18d8181286b2d163e7e2bff6816789 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_78d00e2bede7a580a7c2116e8577bcd4 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_5e4911d0bd1c00fe8b5ea03b813474d3 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_cc1a00b2fed7064b2f2ba2026956efa5 = $(`<div id="html_cc1a00b2fed7064b2f2ba2026956efa5" style="width: 100.0%; height: 100.0%;"><b>Mideast Fighting: Live Updates: Strikes Launched Across Middle East, With No Compromise in Sight</b><br>Location: Iran<br>Side: Other<br>Severity: 14<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_5e4911d0bd1c00fe8b5ea03b813474d3.setContent(html_cc1a00b2fed7064b2f2ba2026956efa5);
+            
+        
+
+        circle_marker_78d00e2bede7a580a7c2116e8577bcd4.bindPopup(popup_5e4911d0bd1c00fe8b5ea03b813474d3)
+        ;
+
+        
+    
+    
+            circle_marker_78d00e2bede7a580a7c2116e8577bcd4.bindTooltip(
+                `<div>
+                     Iran | Sev 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e62f2435cd9b3b0ceb77c8d3685d55f = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_64b00bdf40cb4f1eef2ab3f374e74b63 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_91b501b39736e2650407f68a62239c9e = $(`<div id="html_91b501b39736e2650407f68a62239c9e" style="width: 100.0%; height: 100.0%;"><b>Recent U.S. Assessment Found an Attack on Iran Unlikely to Result in Regime Change</b><br>Location: Iran<br>Side: Mixed<br>Severity: 10<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_64b00bdf40cb4f1eef2ab3f374e74b63.setContent(html_91b501b39736e2650407f68a62239c9e);
+            
+        
+
+        circle_marker_2e62f2435cd9b3b0ceb77c8d3685d55f.bindPopup(popup_64b00bdf40cb4f1eef2ab3f374e74b63)
+        ;
+
+        
+    
+    
+            circle_marker_2e62f2435cd9b3b0ceb77c8d3685d55f.bindTooltip(
+                `<div>
+                     Iran | Sev 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b164d3453dc25c32e663043aad586d71 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_6e2d6166b94e6d157bd822c252e19803 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_af83c37dcda773b0a600ff4bda55292d = $(`<div id="html_af83c37dcda773b0a600ff4bda55292d" style="width: 100.0%; height: 100.0%;"><b>‘They’re cancer’: Trump threatens cartels, Cuba at Latin American summit</b><br>Location: Iran<br>Side: US<br>Severity: 9<br>Cluster: 0<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_6e2d6166b94e6d157bd822c252e19803.setContent(html_af83c37dcda773b0a600ff4bda55292d);
+            
+        
+
+        circle_marker_b164d3453dc25c32e663043aad586d71.bindPopup(popup_6e2d6166b94e6d157bd822c252e19803)
+        ;
+
+        
+    
+    
+            circle_marker_b164d3453dc25c32e663043aad586d71.bindTooltip(
+                `<div>
+                     Iran | Sev 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26fdc0b79570bb82973c1e04e26553b8 = L.circleMarker(
+                [31.7788472, 35.2257856],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_5cd58801a8a8963edb92fa14b17bf48a = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_c412221a9972b6a7fac7e550d1fbc21c = $(`<div id="html_c412221a9972b6a7fac7e550d1fbc21c" style="width: 100.0%; height: 100.0%;"><b>Pakistan Praised Trump. Now It Risks Being Caught Up in His War With Iran</b><br>Location: Jerusalem, Israel<br>Side: Mixed<br>Severity: 15<br>Cluster: 1<br>Source: NYT > World News</div>`)[0];
+                popup_5cd58801a8a8963edb92fa14b17bf48a.setContent(html_c412221a9972b6a7fac7e550d1fbc21c);
+            
+        
+
+        circle_marker_26fdc0b79570bb82973c1e04e26553b8.bindPopup(popup_5cd58801a8a8963edb92fa14b17bf48a)
+        ;
+
+        
+    
+    
+            circle_marker_26fdc0b79570bb82973c1e04e26553b8.bindTooltip(
+                `<div>
+                     Jerusalem, Israel | Sev 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_551250c797605b07be35467a05976b7a = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_c25dffc3d68f3a915869148320f843db = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_33aa7f7d106095fd9a786b88528cd1e5 = $(`<div id="html_33aa7f7d106095fd9a786b88528cd1e5" style="width: 100.0%; height: 100.0%;"><b>Defense Without U.S. Help Is a Live Topic for Canada, Japan and Australia</b><br>Location: Iran<br>Side: US<br>Severity: 10<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_c25dffc3d68f3a915869148320f843db.setContent(html_33aa7f7d106095fd9a786b88528cd1e5);
+            
+        
+
+        circle_marker_551250c797605b07be35467a05976b7a.bindPopup(popup_c25dffc3d68f3a915869148320f843db)
+        ;
+
+        
+    
+    
+            circle_marker_551250c797605b07be35467a05976b7a.bindTooltip(
+                `<div>
+                     Iran | Sev 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c446ecc29d9e4ec714909782395d23be = L.circleMarker(
+                [33.8892265, 35.5025585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_82f11844c957ab891e377cc2904ace6e = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_7d4c7c604ca9717ea2f1fcfbdb24940a = $(`<div id="html_7d4c7c604ca9717ea2f1fcfbdb24940a" style="width: 100.0%; height: 100.0%;"><b>Israel launches raid in Lebanon searching for missing pilot</b><br>Location: Beirut, Lebanon<br>Side: Israel<br>Severity: 5<br>Cluster: 2<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_82f11844c957ab891e377cc2904ace6e.setContent(html_7d4c7c604ca9717ea2f1fcfbdb24940a);
+            
+        
+
+        circle_marker_c446ecc29d9e4ec714909782395d23be.bindPopup(popup_82f11844c957ab891e377cc2904ace6e)
+        ;
+
+        
+    
+    
+            circle_marker_c446ecc29d9e4ec714909782395d23be.bindTooltip(
+                `<div>
+                     Beirut, Lebanon | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f40e5873f6344f961becbfa6c94e0dc = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_bccad08bfe1936a265034a7fd20f2c9c = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_1be6ebcad46cf5c32f6cc25c1b809658 = $(`<div id="html_1be6ebcad46cf5c32f6cc25c1b809658" style="width: 100.0%; height: 100.0%;"><b>Iranian President’s Apology to Neighboring Gulf States Showcases Leadership Rifts</b><br>Location: Iran<br>Side: Iran<br>Severity: 14<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_bccad08bfe1936a265034a7fd20f2c9c.setContent(html_1be6ebcad46cf5c32f6cc25c1b809658);
+            
+        
+
+        circle_marker_9f40e5873f6344f961becbfa6c94e0dc.bindPopup(popup_bccad08bfe1936a265034a7fd20f2c9c)
+        ;
+
+        
+    
+    
+            circle_marker_9f40e5873f6344f961becbfa6c94e0dc.bindTooltip(
+                `<div>
+                     Iran | Sev 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a526831450328a8acae15c94fa441f50 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_5738f72e86011e42c9ae8f8a897ba47b = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_24fabbc22c26c0f802177dbf0c8ab99d = $(`<div id="html_24fabbc22c26c0f802177dbf0c8ab99d" style="width: 100.0%; height: 100.0%;"><b>Russia Attacks Kharkiv and Kyiv in Ukraine</b><br>Location: Iran<br>Side: Other<br>Severity: 15<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_5738f72e86011e42c9ae8f8a897ba47b.setContent(html_24fabbc22c26c0f802177dbf0c8ab99d);
+            
+        
+
+        circle_marker_a526831450328a8acae15c94fa441f50.bindPopup(popup_5738f72e86011e42c9ae8f8a897ba47b)
+        ;
+
+        
+    
+    
+            circle_marker_a526831450328a8acae15c94fa441f50.bindTooltip(
+                `<div>
+                     Iran | Sev 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaee79be99f1f6494121bdf18fed2c9f = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_4c6b2faee1f53ba35b274ca03c9ce09c = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_fd646471b103dd08cb57ded8369996ac = $(`<div id="html_fd646471b103dd08cb57ded8369996ac" style="width: 100.0%; height: 100.0%;"><b>Ian Huntley, Whose Murder of Schoolgirls Appalled Britain, Dies After Prison Attack</b><br>Location: Iran<br>Side: Other<br>Severity: 10<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_4c6b2faee1f53ba35b274ca03c9ce09c.setContent(html_fd646471b103dd08cb57ded8369996ac);
+            
+        
+
+        circle_marker_eaee79be99f1f6494121bdf18fed2c9f.bindPopup(popup_4c6b2faee1f53ba35b274ca03c9ce09c)
+        ;
+
+        
+    
+    
+            circle_marker_eaee79be99f1f6494121bdf18fed2c9f.bindTooltip(
+                `<div>
+                     Iran | Sev 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e015391335c777eadd4b6ad2b0bd4bd = L.circleMarker(
+                [-23.328398, 32.8066057],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_cd5d66af05daf8f2a0f30a7f0b9a6587 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_f667cd38632706c88bcae92e2d4c388b = $(`<div id="html_f667cd38632706c88bcae92e2d4c388b" style="width: 100.0%; height: 100.0%;"><b>What people in Gaza are saying about the closure of the Rafah crossing</b><br>Location: Gaza<br>Side: Other<br>Severity: 5<br>Cluster: -1<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_cd5d66af05daf8f2a0f30a7f0b9a6587.setContent(html_f667cd38632706c88bcae92e2d4c388b);
+            
+        
+
+        circle_marker_2e015391335c777eadd4b6ad2b0bd4bd.bindPopup(popup_cd5d66af05daf8f2a0f30a7f0b9a6587)
+        ;
+
+        
+    
+    
+            circle_marker_2e015391335c777eadd4b6ad2b0bd4bd.bindTooltip(
+                `<div>
+                     Gaza | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78e1836d8b2c443b492202e764a6680b = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_093288a0c4e757a3ba0aeddb07ab96e4 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_d33839087e29b2fea17c68a977e8d131 = $(`<div id="html_d33839087e29b2fea17c68a977e8d131" style="width: 100.0%; height: 100.0%;"><b>Iran’s Navy Is Weakened but U.S. Still Faces Challenges in Strait of Hormuz</b><br>Location: Iran<br>Side: Mixed<br>Severity: 4<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_093288a0c4e757a3ba0aeddb07ab96e4.setContent(html_d33839087e29b2fea17c68a977e8d131);
+            
+        
+
+        circle_marker_78e1836d8b2c443b492202e764a6680b.bindPopup(popup_093288a0c4e757a3ba0aeddb07ab96e4)
+        ;
+
+        
+    
+    
+            circle_marker_78e1836d8b2c443b492202e764a6680b.bindTooltip(
+                `<div>
+                     Iran | Sev 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d01b16beac6d7f4badccc3c0180164ea = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_b9987f6c91377c7b728b1618e84802fc = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_ea45050dfd7f72c567e02fbed7343719 = $(`<div id="html_ea45050dfd7f72c567e02fbed7343719" style="width: 100.0%; height: 100.0%;"><b>War against Iran: How far will it go?</b><br>Location: Iran<br>Side: Mixed<br>Severity: 5<br>Cluster: 0<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_b9987f6c91377c7b728b1618e84802fc.setContent(html_ea45050dfd7f72c567e02fbed7343719);
+            
+        
+
+        circle_marker_d01b16beac6d7f4badccc3c0180164ea.bindPopup(popup_b9987f6c91377c7b728b1618e84802fc)
+        ;
+
+        
+    
+    
+            circle_marker_d01b16beac6d7f4badccc3c0180164ea.bindTooltip(
+                `<div>
+                     Iran | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_900e4ad3acacb075c4294df25adbb311 = L.circleMarker(
+                [31.7788472, 35.2257856],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_f230a75e7f85ca6231f70737648cb157 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_d27a1aede0126e04feb307f41fd7027a = $(`<div id="html_d27a1aede0126e04feb307f41fd7027a" style="width: 100.0%; height: 100.0%;"><b>Israel kills father, daughter in Gaza as genocide continues amid wider war</b><br>Location: Jerusalem, Israel<br>Side: Mixed<br>Severity: 6<br>Cluster: 1<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_f230a75e7f85ca6231f70737648cb157.setContent(html_d27a1aede0126e04feb307f41fd7027a);
+            
+        
+
+        circle_marker_900e4ad3acacb075c4294df25adbb311.bindPopup(popup_f230a75e7f85ca6231f70737648cb157)
+        ;
+
+        
+    
+    
+            circle_marker_900e4ad3acacb075c4294df25adbb311.bindTooltip(
+                `<div>
+                     Jerusalem, Israel | Sev 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c72fa9fe0edf9639a5fde090c0a11a4 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_a65e6ec44719eb59c4ed74e0bdae2650 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_cfb63da4d02070174600b0f38b7cc1de = $(`<div id="html_cfb63da4d02070174600b0f38b7cc1de" style="width: 100.0%; height: 100.0%;"><b>Iranian authorities warn against ‘fifth column’, as no signs of war abating</b><br>Location: Iran<br>Side: Mixed<br>Severity: 5<br>Cluster: 0<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_a65e6ec44719eb59c4ed74e0bdae2650.setContent(html_cfb63da4d02070174600b0f38b7cc1de);
+            
+        
+
+        circle_marker_2c72fa9fe0edf9639a5fde090c0a11a4.bindPopup(popup_a65e6ec44719eb59c4ed74e0bdae2650)
+        ;
+
+        
+    
+    
+            circle_marker_2c72fa9fe0edf9639a5fde090c0a11a4.bindTooltip(
+                `<div>
+                     Iran | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d8d18aa5a10d4d7f3df9b3bac9a1980 = L.circleMarker(
+                [33.8892265, 35.5025585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_232aaaaa0559e467c9d8271be250b2b3 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_6cb3f0561be6ba6181282868617e1961 = $(`<div id="html_6cb3f0561be6ba6181282868617e1961" style="width: 100.0%; height: 100.0%;"><b>Aftermath of village in Lebanon after Hezbollah, Israeli troops clash</b><br>Location: Beirut, Lebanon<br>Side: Israel<br>Severity: 9<br>Cluster: 2<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_232aaaaa0559e467c9d8271be250b2b3.setContent(html_6cb3f0561be6ba6181282868617e1961);
+            
+        
+
+        circle_marker_3d8d18aa5a10d4d7f3df9b3bac9a1980.bindPopup(popup_232aaaaa0559e467c9d8271be250b2b3)
+        ;
+
+        
+    
+    
+            circle_marker_3d8d18aa5a10d4d7f3df9b3bac9a1980.bindTooltip(
+                `<div>
+                     Beirut, Lebanon | Sev 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea0f2e942fa6674f30a3eccf2605fb99 = L.circleMarker(
+                [31.7788472, 35.2257856],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_fb99e1fa15fd796cbbb8ede0215d9d59 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_981d2c2813ed98e2577f855e7bba5a70 = $(`<div id="html_981d2c2813ed98e2577f855e7bba5a70" style="width: 100.0%; height: 100.0%;"><b>Indonesians protest Iran war, pressure president over US ties</b><br>Location: Jerusalem, Israel<br>Side: Mixed<br>Severity: 5<br>Cluster: 1<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_fb99e1fa15fd796cbbb8ede0215d9d59.setContent(html_981d2c2813ed98e2577f855e7bba5a70);
+            
+        
+
+        circle_marker_ea0f2e942fa6674f30a3eccf2605fb99.bindPopup(popup_fb99e1fa15fd796cbbb8ede0215d9d59)
+        ;
+
+        
+    
+    
+            circle_marker_ea0f2e942fa6674f30a3eccf2605fb99.bindTooltip(
+                `<div>
+                     Jerusalem, Israel | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ceb77ef42c2033f21a14e0de9ac83a8b = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_fa0b6dd4609478258ef5f8406b9539c5 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_e7cfe216696d513d6fbf4509f15c2863 = $(`<div id="html_e7cfe216696d513d6fbf4509f15c2863" style="width: 100.0%; height: 100.0%;"><b>Kurdish fighters say Iran ground operation ‘highly likely’</b><br>Location: Iran<br>Side: Iran<br>Severity: 5<br>Cluster: 0<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_fa0b6dd4609478258ef5f8406b9539c5.setContent(html_e7cfe216696d513d6fbf4509f15c2863);
+            
+        
+
+        circle_marker_ceb77ef42c2033f21a14e0de9ac83a8b.bindPopup(popup_fa0b6dd4609478258ef5f8406b9539c5)
+        ;
+
+        
+    
+    
+            circle_marker_ceb77ef42c2033f21a14e0de9ac83a8b.bindTooltip(
+                `<div>
+                     Iran | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1d99d739f85acb17c84250687f59f9e = L.circleMarker(
+                [31.7788472, 35.2257856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_1de9f3c406321ff043d862ec6ff9c68a = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_cfbc56cd778c2df06958889db6041154 = $(`<div id="html_cfbc56cd778c2df06958889db6041154" style="width: 100.0%; height: 100.0%;"><b>Sirens echo in occupied East Jerusalem warning of Iranian missiles</b><br>Location: Jerusalem, Israel<br>Side: Iran<br>Severity: 11<br>Cluster: 1<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_1de9f3c406321ff043d862ec6ff9c68a.setContent(html_cfbc56cd778c2df06958889db6041154);
+            
+        
+
+        circle_marker_b1d99d739f85acb17c84250687f59f9e.bindPopup(popup_1de9f3c406321ff043d862ec6ff9c68a)
+        ;
+
+        
+    
+    
+            circle_marker_b1d99d739f85acb17c84250687f59f9e.bindTooltip(
+                `<div>
+                     Jerusalem, Israel | Sev 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a06ef48f1ec440e90b1c8cdae7db205 = L.circleMarker(
+                [31.7788472, 35.2257856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_393be21f83abd01d501298f218aa01ac = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_cdebea417e19069830bc0902a4fc7c43 = $(`<div id="html_cdebea417e19069830bc0902a4fc7c43" style="width: 100.0%; height: 100.0%;"><b>Beirut’s southern suburbs in ruins after Israeli attack</b><br>Location: Jerusalem, Israel<br>Side: Israel<br>Severity: 12<br>Cluster: 1<br>Source: Al Jazeera – Breaking News, World News and Video from Al Jazeera</div>`)[0];
+                popup_393be21f83abd01d501298f218aa01ac.setContent(html_cdebea417e19069830bc0902a4fc7c43);
+            
+        
+
+        circle_marker_9a06ef48f1ec440e90b1c8cdae7db205.bindPopup(popup_393be21f83abd01d501298f218aa01ac)
+        ;
+
+        
+    
+    
+            circle_marker_9a06ef48f1ec440e90b1c8cdae7db205.bindTooltip(
+                `<div>
+                     Jerusalem, Israel | Sev 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_727cd4a9127429b9ff15eb80fedfd15d = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_2dd82c27ba0b7e88444aaeb523d3caec = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_36de6c50e6baff5aacec5a17358b7c3d = $(`<div id="html_36de6c50e6baff5aacec5a17358b7c3d" style="width: 100.0%; height: 100.0%;"><b>Europe Didn’t Want War With Iran. But So Far, It Can’t Stay Out of It.</b><br>Location: Iran<br>Side: Iran<br>Severity: 9<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_2dd82c27ba0b7e88444aaeb523d3caec.setContent(html_36de6c50e6baff5aacec5a17358b7c3d);
+            
+        
+
+        circle_marker_727cd4a9127429b9ff15eb80fedfd15d.bindPopup(popup_2dd82c27ba0b7e88444aaeb523d3caec)
+        ;
+
+        
+    
+    
+            circle_marker_727cd4a9127429b9ff15eb80fedfd15d.bindTooltip(
+                `<div>
+                     Iran | Sev 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8285f0ef7c6885e6b831b84f680cd706 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_7ed63bc4771261c0d49cba25e4b8f4bc = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_329577f19015e7097256c2678abe5321 = $(`<div id="html_329577f19015e7097256c2678abe5321" style="width: 100.0%; height: 100.0%;"><b>How Good Intentions Helped Pave Trump’s Road to Iran</b><br>Location: Iran<br>Side: Iran<br>Severity: 5<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_7ed63bc4771261c0d49cba25e4b8f4bc.setContent(html_329577f19015e7097256c2678abe5321);
+            
+        
+
+        circle_marker_8285f0ef7c6885e6b831b84f680cd706.bindPopup(popup_7ed63bc4771261c0d49cba25e4b8f4bc)
+        ;
+
+        
+    
+    
+            circle_marker_8285f0ef7c6885e6b831b84f680cd706.bindTooltip(
+                `<div>
+                     Iran | Sev 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc23a3817b9b3b59caef2eacf53d7213 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_6b9eade48c573036ed8a6427a2c78050 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_dd6ff80ba90d1e882c459fad0bbf91ab = $(`<div id="html_dd6ff80ba90d1e882c459fad0bbf91ab" style="width: 100.0%; height: 100.0%;"><b>Iran’s Drone Attacks Plague the Gulf States</b><br>Location: Iran<br>Side: Iran<br>Severity: 15<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_6b9eade48c573036ed8a6427a2c78050.setContent(html_dd6ff80ba90d1e882c459fad0bbf91ab);
+            
+        
+
+        circle_marker_fc23a3817b9b3b59caef2eacf53d7213.bindPopup(popup_6b9eade48c573036ed8a6427a2c78050)
+        ;
+
+        
+    
+    
+            circle_marker_fc23a3817b9b3b59caef2eacf53d7213.bindTooltip(
+                `<div>
+                     Iran | Sev 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_adda5fd4502534f74a6f494f5c3f6fd1 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_49d0aa0fe9fff0a79a291af227965591 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_85f1053a62062c8c5d7d5c5bf170d820 = $(`<div id="html_85f1053a62062c8c5d7d5c5bf170d820" style="width: 100.0%; height: 100.0%;"><b>For Xi, Trump’s Embrace of War Proves China Needs More Power</b><br>Location: Iran<br>Side: Iran<br>Severity: 6<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_49d0aa0fe9fff0a79a291af227965591.setContent(html_85f1053a62062c8c5d7d5c5bf170d820);
+            
+        
+
+        circle_marker_adda5fd4502534f74a6f494f5c3f6fd1.bindPopup(popup_49d0aa0fe9fff0a79a291af227965591)
+        ;
+
+        
+    
+    
+            circle_marker_adda5fd4502534f74a6f494f5c3f6fd1.bindTooltip(
+                `<div>
+                     Iran | Sev 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73342195c60e6cca50a87d3b1204606e = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_06669ff139ddf500aacf06441d5dc067 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_3144b83cff1a73d67171d6bc7e2fafe9 = $(`<div id="html_3144b83cff1a73d67171d6bc7e2fafe9" style="width: 100.0%; height: 100.0%;"><b>As Trump Out-Putins Putin, Russia’s Global Influence Erodes</b><br>Location: Iran<br>Side: Iran<br>Severity: 8<br>Cluster: 0<br>Source: NYT > World News</div>`)[0];
+                popup_06669ff139ddf500aacf06441d5dc067.setContent(html_3144b83cff1a73d67171d6bc7e2fafe9);
+            
+        
+
+        circle_marker_73342195c60e6cca50a87d3b1204606e.bindPopup(popup_06669ff139ddf500aacf06441d5dc067)
+        ;
+
+        
+    
+    
+            circle_marker_73342195c60e6cca50a87d3b1204606e.bindTooltip(
+                `<div>
+                     Iran | Sev 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_785fc15da36d7dfbf7374d3f88c74744 = L.circleMarker(
+                [33.8892265, 35.5025585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8a18d8181286b2d163e7e2bff6816789);
+        
+    
+        var popup_4d3b253b4216448bd2882accf2d94498 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_a8c4700ba152696a8fc368cb869956eb = $(`<div id="html_a8c4700ba152696a8fc368cb869956eb" style="width: 100.0%; height: 100.0%;"><b>Lebanon at ‘Tipping Point’ as It Seeks to Disarm Hezbollah</b><br>Location: Beirut, Lebanon<br>Side: Iran<br>Severity: 6<br>Cluster: 2<br>Source: NYT > World News</div>`)[0];
+                popup_4d3b253b4216448bd2882accf2d94498.setContent(html_a8c4700ba152696a8fc368cb869956eb);
+            
+        
+
+        circle_marker_785fc15da36d7dfbf7374d3f88c74744.bindPopup(popup_4d3b253b4216448bd2882accf2d94498)
+        ;
+
+        
+    
+    
+            circle_marker_785fc15da36d7dfbf7374d3f88c74744.bindTooltip(
+                `<div>
+                     Beirut, Lebanon | Sev 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_8a18d8181286b2d163e7e2bff6816789.addTo(map_955261085cd9a396775447a7edb0999a);
+        
+    
+            var heat_map_3ad9e3747e78f171561b3b918d347570 = L.heatLayer(
+                [[32.6475314, 54.5643516, 14], [32.6475314, 54.5643516, 10], [32.6475314, 54.5643516, 9], [31.7788472, 35.2257856, 15], [32.6475314, 54.5643516, 10], [33.8892265, 35.5025585, 5], [32.6475314, 54.5643516, 14], [32.6475314, 54.5643516, 15], [32.6475314, 54.5643516, 10], [-23.328398, 32.8066057, 5], [32.6475314, 54.5643516, 4], [32.6475314, 54.5643516, 5], [31.7788472, 35.2257856, 6], [32.6475314, 54.5643516, 5], [33.8892265, 35.5025585, 9], [31.7788472, 35.2257856, 5], [32.6475314, 54.5643516, 5], [31.7788472, 35.2257856, 11], [31.7788472, 35.2257856, 12], [32.6475314, 54.5643516, 9], [32.6475314, 54.5643516, 5], [32.6475314, 54.5643516, 15], [32.6475314, 54.5643516, 6], [32.6475314, 54.5643516, 8], [33.8892265, 35.5025585, 6]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 35,
+  "blur": 20,
+}
+            );
+        
+    
+            heat_map_3ad9e3747e78f171561b3b918d347570.addTo(map_955261085cd9a396775447a7edb0999a);
+        
+</script>
+</html>
